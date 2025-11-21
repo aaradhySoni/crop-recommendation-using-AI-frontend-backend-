@@ -66,8 +66,8 @@ const Recommend = () => {
             </div>
           </div>
 
-          {/* Form Card */}
-          <Card className="glass-card p-8 animate-fade-in">
+          {/* Form Card with Enhanced Glow */}
+          <Card className="glass-card-vibrant p-8 animate-fade-in hover-glow">
             {/* Step 1: Soil pH */}
             {step === 1 && (
               <div className="space-y-6">
@@ -84,7 +84,7 @@ const Recommend = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <Label className="text-lg">pH Level</Label>
-                    <span className="text-3xl font-outfit font-bold text-primary">{formData.soilPH.toFixed(1)}</span>
+                    <span className="text-3xl font-outfit font-bold text-primary-vibrant drop-shadow-lg glow-neon-green">{formData.soilPH.toFixed(1)}</span>
                   </div>
                   
                   <Slider
@@ -133,14 +133,14 @@ const Recommend = () => {
                       {["Clay", "Sandy", "Loamy", "Silt"].map((type) => (
                         <Card
                           key={type}
-                          className={`p-4 cursor-pointer transition-all hover:scale-105 ${
+                          className={`p-4 cursor-pointer transition-all hover-lift ${
                             formData.soilType === type
-                              ? "border-primary border-2 bg-primary/5"
-                              : "hover:border-primary/50"
+                              ? "border-primary-vibrant border-2 bg-primary/10 glow-neon-green"
+                              : "hover:border-primary/50 glass-card"
                           }`}
                           onClick={() => setFormData({ ...formData, soilType: type })}
                         >
-                          <div className="text-center font-medium">{type}</div>
+                          <div className="text-center font-semibold">{type}</div>
                         </Card>
                       ))}
                     </div>
@@ -149,7 +149,7 @@ const Recommend = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center">
                       <Label className="text-lg">Moisture Level</Label>
-                      <span className="text-2xl font-outfit font-bold text-secondary">{formData.moisture}%</span>
+                      <span className="text-2xl font-outfit font-bold text-secondary-glow drop-shadow-lg glow-neon-blue">{formData.moisture}%</span>
                     </div>
                     
                     <Slider
