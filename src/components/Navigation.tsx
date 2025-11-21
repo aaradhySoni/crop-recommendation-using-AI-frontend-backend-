@@ -18,7 +18,7 @@ const Navigation = () => {
             <div className="p-2 bg-gradient-hero rounded-xl">
               <Sprout className="w-6 h-6 text-white" />
             </div>
-            <span className="font-outfit text-xl font-bold">CropSmart AI</span>
+            <span className="font-outfit text-xl font-bold">SmartKheti</span>
           </Link>
 
           {/* Desktop Menu */}
