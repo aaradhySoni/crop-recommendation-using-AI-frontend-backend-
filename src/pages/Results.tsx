@@ -34,57 +34,59 @@ const Results = () => {
           </div>
 
           <div className="text-center mb-8">
-            <Badge className="bg-gradient-hero text-white mb-4">AI Analysis Complete</Badge>
-            <h1 className="font-outfit text-4xl md:text-5xl font-bold mb-4">
-              Your Crop Recommendations
+            <Badge className="bg-gradient-vibrant text-white mb-4 animate-shimmer px-6 py-2 text-base">AI Analysis Complete</Badge>
+            <h1 className="font-outfit text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+              <span className="bg-gradient-neon bg-clip-text text-transparent drop-shadow-lg">
+                Your Crop Recommendations
+              </span>
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground font-medium">
               Based on your soil, weather, and historical data
             </p>
           </div>
 
-          {/* Top Recommendation */}
-          <Card className="glass-card p-8 mb-6 animate-fade-in border-2 border-primary">
+          {/* Top Recommendation with Vibrant Glow */}
+          <Card className="glass-card-vibrant p-8 mb-6 animate-fade-in border-2 border-primary-vibrant glow-neon-green">
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-4">
                 <img src={wheatIcon} alt="Wheat" className="w-20 h-20" />
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <h2 className="font-outfit text-3xl font-bold">Wheat</h2>
-                    <Badge className="bg-gradient-hero text-white">Best Match</Badge>
+                    <h2 className="font-outfit text-3xl font-bold drop-shadow-md">Wheat</h2>
+                    <Badge className="bg-gradient-vibrant text-white animate-pulse-glow px-4 py-1">Best Match</Badge>
                   </div>
                   <p className="text-muted-foreground">Highly recommended for your conditions</p>
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-4xl font-outfit font-bold text-primary mb-1">98%</div>
-                <div className="text-sm text-muted-foreground">Match Score</div>
+                <div className="text-4xl font-outfit font-bold text-primary-vibrant mb-1 drop-shadow-lg glow-neon-green">98%</div>
+                <div className="text-sm text-muted-foreground font-semibold">Match Score</div>
               </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="glass-card p-4 rounded-xl">
+              <div className="glass-card-vibrant p-4 rounded-xl hover-lift glow-neon-green border border-primary/20">
                 <div className="flex items-center gap-2 mb-2">
-                  <TrendingUp className="w-5 h-5 text-primary" />
+                  <TrendingUp className="w-5 h-5 text-primary-vibrant animate-bounce-subtle" />
                   <span className="font-semibold">Expected Yield</span>
                 </div>
-                <div className="text-2xl font-outfit font-bold text-primary">4.5 tons/acre</div>
+                <div className="text-2xl font-outfit font-bold text-primary-vibrant drop-shadow-lg">4.5 tons/acre</div>
               </div>
 
-              <div className="glass-card p-4 rounded-xl">
+              <div className="glass-card-vibrant p-4 rounded-xl hover-lift glow-neon-orange border border-accent/20">
                 <div className="flex items-center gap-2 mb-2">
-                  <DollarSign className="w-5 h-5 text-accent" />
+                  <DollarSign className="w-5 h-5 text-accent-glow animate-bounce-subtle" style={{ animationDelay: "0.2s" }} />
                   <span className="font-semibold">Profit Potential</span>
                 </div>
-                <div className="text-2xl font-outfit font-bold text-accent">$2,400/acre</div>
+                <div className="text-2xl font-outfit font-bold text-accent-glow drop-shadow-lg">$2,400/acre</div>
               </div>
 
-              <div className="glass-card p-4 rounded-xl">
+              <div className="glass-card-vibrant p-4 rounded-xl hover-lift glow-neon-blue border border-secondary/20">
                 <div className="flex items-center gap-2 mb-2">
-                  <Leaf className="w-5 h-5 text-secondary" />
+                  <Leaf className="w-5 h-5 text-secondary-glow animate-bounce-subtle" style={{ animationDelay: "0.4s" }} />
                   <span className="font-semibold">Sustainability</span>
                 </div>
-                <div className="text-2xl font-outfit font-bold text-secondary">Excellent</div>
+                <div className="text-2xl font-outfit font-bold text-secondary-glow drop-shadow-lg">Excellent</div>
               </div>
             </div>
 
@@ -103,56 +105,56 @@ const Results = () => {
             </div>
           </Card>
 
-          {/* Secondary Recommendations */}
+          {/* Secondary Recommendations with Enhanced Visuals */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <Card className="glass-card p-6 hover-scale animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <Card className="glass-card-vibrant p-6 hover-lift animate-fade-in border border-secondary/20 glow-neon-blue" style={{ animationDelay: "0.1s" }}>
               <div className="flex items-center gap-4 mb-4">
-                <img src={cornIcon} alt="Corn" className="w-16 h-16" />
+                <img src={cornIcon} alt="Corn" className="w-16 h-16 drop-shadow-lg" />
                 <div>
-                  <h3 className="font-outfit text-2xl font-bold">Corn</h3>
-                  <div className="text-2xl font-outfit font-bold text-secondary">92%</div>
+                  <h3 className="font-outfit text-2xl font-bold drop-shadow-md">Corn</h3>
+                  <div className="text-2xl font-outfit font-bold text-secondary-glow drop-shadow-lg">92%</div>
                 </div>
               </div>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Expected Yield</span>
-                  <span className="font-semibold">3.8 tons/acre</span>
+                  <span className="font-bold text-foreground">3.8 tons/acre</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Profit Potential</span>
-                  <span className="font-semibold">$2,100/acre</span>
+                  <span className="font-bold text-accent">$2,100/acre</span>
                 </div>
               </div>
             </Card>
 
-            <Card className="glass-card p-6 hover-scale animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <Card className="glass-card-vibrant p-6 hover-lift animate-fade-in border border-accent/20 glow-neon-orange" style={{ animationDelay: "0.2s" }}>
               <div className="flex items-center gap-4 mb-4">
-                <img src={riceIcon} alt="Rice" className="w-16 h-16" />
+                <img src={riceIcon} alt="Rice" className="w-16 h-16 drop-shadow-lg" />
                 <div>
-                  <h3 className="font-outfit text-2xl font-bold">Rice</h3>
-                  <div className="text-2xl font-outfit font-bold text-secondary">87%</div>
+                  <h3 className="font-outfit text-2xl font-bold drop-shadow-md">Rice</h3>
+                  <div className="text-2xl font-outfit font-bold text-accent-glow drop-shadow-lg">87%</div>
                 </div>
               </div>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Expected Yield</span>
-                  <span className="font-semibold">3.2 tons/acre</span>
+                  <span className="font-bold text-foreground">3.2 tons/acre</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Profit Potential</span>
-                  <span className="font-semibold">$1,900/acre</span>
+                  <span className="font-bold text-accent">$1,900/acre</span>
                 </div>
               </div>
             </Card>
           </div>
 
-          {/* Actions */}
+          {/* Actions with Vibrant Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="gap-2">
+            <Button variant="hero" size="lg" className="gap-2 animate-pulse-glow hover:scale-105 transition-transform">
               <Download className="w-5 h-5" />
               Download Full Report
             </Button>
-            <Button variant="glass" size="lg" onClick={() => navigate("/recommend")}>
+            <Button variant="glass" size="lg" onClick={() => navigate("/recommend")} className="hover-lift">
               Try Another Analysis
             </Button>
           </div>
