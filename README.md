@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+✨ Crop Recommendation System (AI-Powered)
 
-## Project info
+A full-stack AI-powered crop recommendation platform built with React + Node.js + Express + MongoDB.
+The system predicts the best crop based on soil conditions, weather, and other parameters.
 
-**URL**: https://lovable.dev/projects/89a342ee-29b9-464e-9f70-a969ede18b1b
+🚀 Features
 
-## How can I edit this code?
+✨ Frontend (React + Vite + TypeScript)
 
-There are several ways of editing your application.
+Modern UI with TailwindCSS
 
-**Use Lovable**
+Real-time suggestions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/89a342ee-29b9-464e-9f70-a969ede18b1b) and start prompting.
+Dynamic forms
 
-Changes made via Lovable will be committed automatically to this repo.
+API integration with backend
 
-**Use your preferred IDE**
+Clean folder structure (pages, components, hooks, lib)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✨Backend (Node.js + Express + MongoDB)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+AI-based crop recommendation API
 
-Follow these steps:
+Chat-based Q&A system
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+REST API routes
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+MongoDB models
 
-# Step 3: Install the necessary dependencies.
-npm i
+Error handling & validation middleware
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🗂️ Project Structure
+project
+
+
+│── public/
+
+│── src/
+
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   └── assets/
+│
+
+
+
+│── server/
+
+
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   └── index.js
+│
+
+
+
+├── package.json
+
+├── vite.config.ts
+
+└── README.md
+
+
+
+✨Tech Stack
+
+
+✨Frontend
+
+React + Vite
+
+TypeScript
+
+TailwindCSS
+
+✨Backend
+
+Node.js
+
+Express.js
+
+MongoDB (Mongoose)
+
+dotenv
+
+Joi validation
+
+🛠️ Installation & Setup
+⚙️ Clone the repository
+git clone https://github.com/aaradhySoni/crop-recommendation-using-AI-frontend-backend-.git
+cd crop-recommendation-using-AI-frontend-backend-
+
+✨ Frontend Installation
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+✨ Backend Installation
+cd server
+npm install
+npm start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+✨ Environment Variables
 
-**Use GitHub Codespaces**
+Inside server/.env:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
 
-## What technologies are used for this project?
+📡 API Endpoints
+POST /api/recommendation
 
-This project is built with:
+Returns crop recommendation.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+POST /api/chat
 
-## How can I deploy this project?
+AI chat assistant.
 
-Simply open [Lovable](https://lovable.dev/projects/89a342ee-29b9-464e-9f70-a969ede18b1b) and click on Share -> Publish.
+🤝 Contributing
 
-## Can I connect a custom domain to my Lovable project?
+Pull requests and improvements are welcome.
 
-Yes, you can!
+📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT License © 2025 Aaradhy Soni
